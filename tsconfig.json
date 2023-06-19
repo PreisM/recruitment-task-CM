@@ -41,6 +41,9 @@
       "@stores/*": [
         "./src/stores/*"
       ],
+      "@quarks/*": [
+        "./src/components/quarks/*"
+      ],
       "@atoms/*": [
         "./src/components/atoms/*"
       ],
