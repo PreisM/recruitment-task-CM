@@ -3,14 +3,14 @@ import en from '@locales/en'
 import pl from '@locales/pl'
 
 const messages = {
-  pl: pl,
-  en: en
+  pl,
+  en
 }
 
 const i18n = createI18n({
   globalInjection: true,
   legacy: false,
-  locale: 'en',
+  locale: 'pl',
   messages
 })
 
