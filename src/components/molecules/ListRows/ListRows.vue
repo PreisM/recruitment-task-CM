@@ -1,8 +1,9 @@
 <template>
-  <div class="bg-gray-800 text-white mt-1">
+  <div class="bg-gray-800 text-white mt-0.5">
     <list-row
       v-for="post in posts"
       :key="post.id"
+      data-test="row"
       :post="post"
       @delete="showModal($event, 'delete')"
       @preview="showModal($event, 'preview')"
