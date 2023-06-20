@@ -12,13 +12,13 @@
       class="fixed inset-0 z-0"
     >
       <div class="absolute inset-0 bg-gray-500 opacity-75" />
-      <div class="bg-white max-w-3xl shadow rounded absolute top-1/2 transform -translate-y-1/2 left-1/2 -translate-x-1/2 transition-all duration-500">
+      <div class="bg-white max-w-xl w-9/12 md:w-auto shadow rounded absolute top-1/2 transform -translate-y-1/2 left-1/2 -translate-x-1/2 transition-all duration-500">
         <div
           v-if="isDelete"
-          class="py-6 px-12 text-gray-700"
+          class="py-4 md:py-6 px-6 text-justify md:text-left md:px-12 text-gray-700"
         >
           <span
-            class="text-xl font-semibold"
+            class="text-base md:text-xl font-semibold"
             v-text="$t('posts.modalDelete', { title: `${post.title}` })"
           />
           <div class="mt-8 mx-auto space-x-4 text-center">
@@ -36,15 +36,15 @@
         </div>
         <div
           v-else
-          class="py-6 px-12 text-gray-900 text-center"
+          class="py-6 px-4 md:px-12 text-gray-900 text-center"
         >
           <div class="flex justify-between">
             <span
-              class="text-xl font-semibold"
+              class="text-base md:text-xl font-semibold"
               v-text="post.title"
             />
             <button
-              class="block"
+              class="block mt-0 md:mt-0.5 mb-auto"
               @click="$emit('close')"
             >
               <icon
@@ -54,7 +54,7 @@
               />
             </button>
           </div>
-          <div class="mt-8 text-left">
+          <div class="mt-8 text-left text-sm md:text-base">
             <span
               v-text="post.body"
             />
