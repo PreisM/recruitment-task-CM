@@ -1,6 +1,7 @@
 {
   "name": "recruitment-task-cm",
   "private": true,
+  "homepage": "https://preism.github.io/recruitment-task-CM/",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite --host --port=8080",
