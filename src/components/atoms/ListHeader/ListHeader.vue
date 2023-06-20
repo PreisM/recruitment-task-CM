@@ -21,15 +21,23 @@
       v-text="$t('posts.columns.tags')"
     />
     <div
-      class="col-span-3 md:col-span-2 text-center justify-end items-center flex space-x-4 mr-4"
+      class="col-span-3 md:col-span-2 text-center justify-end items-center flex space-x-4 mr-4 relative"
     >
       <input
         ref="input"
         v-model="phrase"
+        type="text"
         class="transition-all text-gray-900 h-6 rounded focus:outline-none"
         :class="isInputHidden ? 'max-w-full sm:max-w-0 p-2 sm:p-0' : 'max-w-full p-2'"
         :placeholder="$t('posts.search')"
       >
+      <icon
+        v-if="!!phrase"
+        icon="cross"
+        class="h-3 w-3 stroke-2 stroke-black absolute top-1.5 right-10 text-gray-900 cursor-pointer hover:text-gray-300"
+        viewBox="0 0 32 32"
+        @click="phrase = ''"
+      />
       <button
         class="hidden sm:block"
         @click="showInput"
