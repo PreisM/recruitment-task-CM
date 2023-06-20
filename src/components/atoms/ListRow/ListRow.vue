@@ -37,6 +37,7 @@
     >
       <button
         class="block"
+        :title="$t('posts.showTitle')"
         @click="$emit('preview', post)"
       >
         <icon
@@ -47,6 +48,7 @@
       </button>
       <button
         class="block"
+        :title="$t('posts.deleteTitle')"
         @click="$emit('delete', post)"
       >
         <icon
