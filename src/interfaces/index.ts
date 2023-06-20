@@ -1,7 +1,7 @@
 export interface Post {
   id: number
   title: string
-  description: string
+  body: string
   userId: number
   tags: string[]
 }
