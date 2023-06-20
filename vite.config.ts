@@ -13,6 +13,7 @@ const vitestConfig: UserConfig = {
 
 export default defineConfig({
   test: vitestConfig.test,
+  base: '/recruitment-task-CM/',
   build: {
     sourcemap: true
   },
