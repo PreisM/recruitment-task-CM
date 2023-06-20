@@ -28,13 +28,13 @@
         v-model="phrase"
         type="text"
         class="transition-all text-gray-900 h-6 rounded focus:outline-none"
-        :class="isInputHidden ? 'max-w-full sm:max-w-0 p-2 sm:p-0' : 'max-w-full p-2'"
+        :class="isInputHidden ? 'max-w-full sm:max-w-0 p-2 sm:p-0' : 'max-w-full py-2 pl-2 pr-5'"
         :placeholder="$t('posts.search')"
       >
       <icon
         v-if="!!phrase"
         icon="cross"
-        class="h-3 w-3 stroke-2 stroke-black absolute top-1.5 right-10 text-gray-900 cursor-pointer hover:text-gray-300"
+        class="h-3 w-3 stroke-2 stroke-black absolute top-1.5 right-1 sm:right-10 text-gray-900 cursor-pointer hover:text-gray-300"
         viewBox="0 0 32 32"
         @click="phrase = ''"
       />

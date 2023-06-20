@@ -20,7 +20,7 @@
         />
         <span
           class="whitespace-nowrap truncate"
-          v-text="`${$t('posts.columns.tags')}: ${post.tags}`"
+          v-text="`${$t('posts.columns.tags')}: ${post.tags.join(', ')}`"
         />
       </div>
     </div>
